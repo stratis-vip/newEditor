@@ -31,6 +31,14 @@ const TextEditor = () => {
 		const newText = cleanText(e.target.value);
 		setText(capitalize(newText));
 		setCopied(false);
+		navigator.clipboard.readText().then(
+			(clipText) => {
+				if (clipText !== '' && clipText.length > newText.length ) {
+					navigator.clipboard.writeText('').then( (t)=> console.log('clipboard zeroed'))
+					
+				}
+			}
+		)
 	};
 
 	useEffect(() => {
@@ -67,6 +75,7 @@ const TextEditor = () => {
 
 					document.getElementById("clipB").click();
 				} else {
+
 					setText(s => {
 						const txt = input.value
 						const start = input.selectionStart

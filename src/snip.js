@@ -20,6 +20,7 @@ export const snips = {
 	κρλ: "καριόλη άντρα ",
 	κσ: "καλησπέρα ",
 	κχ: "καλά Χριστούγεννα ",
+	μδ: "μεγαλοβδομάδα ",
 	μκα: "μια όμορφη καλημέρα ",
 	μκσ: "μια όμορφη καλησπέρα ",
 	μκμ: "ένα όμορφο μεσημεράκι ",
@@ -58,6 +59,7 @@ export const snips = {
 	soh: "start over from here",
 	sf: "San Francisco ",
 	hd: "how are you doing? ",
-	nk: "need to know each other better first "
+	nk: "need to know each other better first ",
+	"100%": "εκατό τοις εκατό "
 
 };
